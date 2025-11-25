@@ -35,3 +35,8 @@
   z-index: 10;
   padding: 0 25px;
 }
+@media screen and (min-width: 1400px) {
+  .fix-card-layer {
+    margin-top: -11%;
+  }
+}
