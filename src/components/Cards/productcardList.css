@@ -157,3 +157,17 @@
 .arrow-btn {
   border: 1px solid black;
 }
+.recommend {
+  font-size: 24px;
+  color: black;
+  font-weight: 700;
+}
+
+.sign-btn {
+  background-color: #ffce12;
+  padding: 5px 6%;
+  border-radius: 25px;
+}
+.new-user {
+  font-size: 12px;
+}

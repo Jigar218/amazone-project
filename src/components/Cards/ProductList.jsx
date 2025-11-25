@@ -22,77 +22,89 @@ const ProductDetailScroll = ({ products }) => {
   };
 
   return (
-    <div className="detail-scroll-container p-3">
-      {/* Top Header */}
-      <div className="detail-scroll-header">
-        <div>
-          <strong>Related to items you've viewed</strong>{" "}
-          <span className="see-more">See more</span>
+    <>
+      <div className="detail-scroll-container p-3">
+        {/* Top Header */}
+        <hr className="" />
+        <div className="detail-scroll-header ">
+          <div>
+            <strong>Related to items you've viewed</strong>{" "}
+            <span className="see-more">See more</span>
+          </div>
+          <span className="page-number">
+            Page {currentPage} of {totalPages}
+          </span>
         </div>
-        <span className="page-number">
-          Page {currentPage} of {totalPages}
-        </span>
-      </div>
 
-      {/* Scroll Area */}
-      <div className="scroll-wrapper">
-        <button
-          className="arrow-btn left"
-          onClick={handlePrev}
-          disabled={currentPage === 1}
-        >
-          <FaChevronLeft />
-        </button>
+        {/* Scroll Area */}
+        <div className="scroll-wrapper">
+          <button
+            className="arrow-btn left"
+            onClick={handlePrev}
+            disabled={currentPage === 1}
+          >
+            <FaChevronLeft />
+          </button>
 
-        <div className="scroll-items mx-4 px-2">
-          {currentProducts.map((item, index) => (
-            <div key={index} className="scroll-card">
-              <img src={item.img} alt={item.title} />
-              <p className="product-title">{item.title}</p>
-              <div className="d-flex align-item-center rating">
-                <span>
-                  <FaStar />
-                </span>
-                <span>
-                  <FaStar />
-                </span>
-                <span>
-                  <FaStar />
-                </span>
-                <span>
-                  <FaStar />
-                </span>
-                <span>
-                  <FaRegStar />
-                </span>
-                <span className="reviews"> {item.reviews}</span>
+          <div className="scroll-items mx-4 px-2 ">
+            {currentProducts.map((item, index) => (
+              <div key={index} className="scroll-card">
+                <img src={item.img} alt={item.title} />
+                <p className="product-title">{item.title}</p>
+                <div className="d-flex align-item-center rating">
+                  <span>
+                    <FaStar />
+                  </span>
+                  <span>
+                    <FaStar />
+                  </span>
+                  <span>
+                    <FaStar />
+                  </span>
+                  <span>
+                    <FaStar />
+                  </span>
+                  <span>
+                    <FaRegStar />
+                  </span>
+                  <span className="reviews"> {item.reviews}</span>
+                </div>
+                <p className="deal mt-1">
+                  <span className="limited-deal">{item.offer}</span> Limited
+                  time deal
+                </p>
+                <p className="products-price">{item.price}</p>
+                <p className="items-price">
+                  M.R.P:
+                  <span className="mrp ">{item.mrp}</span>
+                </p>
+                <p className="delivery">
+                  Get it by <span className="fw-semibold">{item.delivery}</span>
+                </p>
+                <p className="delivery">FREE Delivery by Amazon</p>
               </div>
-              <p className="deal mt-1">
-                <span className="limited-deal">{item.offer}</span> Limited time
-                deal
-              </p>
-              <p className="products-price">{item.price}</p>
-              <p className="items-price">
-                M.R.P:
-                <span className="mrp ">{item.mrp}</span>
-              </p>
-              <p className="delivery">
-                Get it by <span className="fw-semibold">{item.delivery}</span>
-              </p>
-              <p className="delivery">FREE Delivery by Amazon</p>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
 
-        <button
-          className="arrow-btn right"
-          onClick={handleNext}
-          disabled={currentPage === totalPages}
-        >
-          <FaChevronRight />
-        </button>
+          <button
+            className="arrow-btn right"
+            onClick={handleNext}
+            disabled={currentPage === totalPages}
+          >
+            <FaChevronRight />
+          </button>
+        </div>
+        <hr className="" />
       </div>
-    </div>
+      <div className="bg-white text-center">
+        <h5 className=" recommend">See personalized recommendations</h5>
+        <button className="sign-btn ">Sign in</button>
+        <p className="new-user">
+          New customer? <span className="text-primary">Start here.</span>
+        </p>
+        <hr className="" />
+      </div>
+    </>
   );
 };
 
