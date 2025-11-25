@@ -90,9 +90,10 @@ const HomeCategorySection = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 ">
       {categories.map((category, index) => (
-        <div key={index} className="bg-white  border rounded-0 cards ">
+        <div key={index} className="bg-white  border rounded-0 cards  ">
+          <h3 className="card-title">{category.title}</h3>
+
           <div className="grid grid-cols-2 ">
-            <h3 className="card-title">{category.title}</h3>
             {category.items.map((item, i) => (
               <div
                 key={i}
