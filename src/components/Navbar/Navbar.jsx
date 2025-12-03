@@ -8,7 +8,7 @@ import logo from "../../assets/logo.png";
 import flag from "../../assets/india.png";
 import { FaRegUser } from "react-icons/fa";
 // import { FaBars } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
 import { RiArrowDropRightLine } from "react-icons/ri";
 import "./navbar.css";
 const Navbars = () => {
@@ -26,15 +26,14 @@ const Navbars = () => {
           <div className="d-flex align-items-center me-auto">
             <FaBars size={20} className="text-white me-2" />
 
-            <Navbar.Brand
-              href="#"
-              className="d-flex align-items-center mobile-logo"
+            <Link
+              to="/"
+              className="d-flex align-items-center mobile-logo text-decoration-none"
             >
               <img src={logo} alt="logo" style={{ height: "28px" }} />
               <span className="logo text-white">.in</span>
-            </Navbar.Brand>
+            </Link>
           </div>
-
           {/* Right Section (Sign-in + Cart) */}
           <div className="d-flex align-items-center text-white">
             Sign in
@@ -47,10 +46,13 @@ const Navbars = () => {
           </div>
         </div>
         {/*  Desktop Logo */}
-        <Navbar.Brand href="#" className="d-none d-lg-flex align-items-center">
+        <Link
+          to="/"
+          className="d-none d-lg-flex align-items-center  text-decoration-none"
+        >
           <img src={logo} alt="logo" style={{ height: "28px" }} />
           <span className="logo text-white">.in</span>
-        </Navbar.Brand>
+        </Link>
         {/*  Location (Only Desktop) */}
         <div className="text-white d-none d-lg-flex align-items-center location me-3 mt-1">
           <IoLocationOutline style={{ fontSize: "16px" }} />

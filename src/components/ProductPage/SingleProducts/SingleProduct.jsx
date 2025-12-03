@@ -146,7 +146,7 @@ const SingleProduct = ({ product }) => {
   ];
 
   return (
-    <div className="container p-0">
+    <div className="container-fluid p-0">
       <p style={{ fontSize: "12px", color: "gray" }} className="px-3">
         Bags, Wallets and Luggage › Luggage › Suitcases & Trolley Bags
       </p>
@@ -167,7 +167,7 @@ const SingleProduct = ({ product }) => {
             <div className="main-img-container">
               <img
                 src="https://m.media-amazon.com/images/I/71AS8OyATtL._SX679_.jpg"
-                className="main-img"
+                className="main-img "
                 alt="product"
                 ref={imgRef}
                 onMouseEnter={() => setZoomVisible(true)}
