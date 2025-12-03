@@ -1,0 +1,91 @@
+.location {
+  height: 40px;
+}
+.logo {
+  color: white;
+  font-size: 12px;
+  margin-left: 2px;
+  font-weight: 500;
+}
+.update {
+  margin-top: -8px !important;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.options {
+  background-color: rgb(231, 227, 227) !important;
+  max-width: 70px;
+  font-size: 12px;
+}
+.input-style::placeholder {
+  font-size: 15px;
+}
+
+.flag {
+  width: 20px;
+  height: 20px;
+}
+
+.arrows {
+  font-size: 20px;
+  margin-top: 2px;
+  margin-left: -5px;
+}
+
+.sign-in {
+  font-size: 11px;
+  margin-bottom: -5px;
+  font-weight: 500;
+}
+.acc {
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: -12px;
+}
+.cart-length {
+  top: -12px;
+  left: 22px;
+  font-size: 16px;
+  color: #ff6200;
+}
+.deals {
+  width: 400px;
+  height: 39px;
+}
+
+@media (min-width: 1210px) and (max-width: 1258px) {
+  .deals {
+    width: 350px;
+    height: 39px;
+  }
+}
+@media (min-width: 1150px) and (max-width: 1209px) {
+  .deals {
+    width: 290px;
+    height: 39px;
+  }
+}
+@media (max-width: 1149px) {
+  .deals {
+    width: 250px;
+    height: 39px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1109px) {
+  .deals {
+    display: none;
+  }
+}
+@media (min-width: 375px) and (max-width: 991px) {
+  .search-bar-size {
+    width: 100%;
+  }
+}
+
+/* <img
+            src={
+              "https://m.media-amazon.com/images/G/31/img21/APAY/ITD25/SMW_400x39_1._CB778584269_.png"
+            }
+            alt=""
+          /> */

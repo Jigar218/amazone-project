@@ -1,0 +1,238 @@
+.filter-container {
+  background: white;
+  max-width: 291px !important;
+
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  font-size: 15px;
+  color: black;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.filter-section label {
+  display: block;
+  font-size: 14px;
+  margin: 4px 5px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.726);
+  font-weight: 500;
+}
+.items-list li {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.884);
+  font-weight: 500;
+}
+.rating-star {
+  cursor: pointer;
+  color: #ff6201;
+  font-size: 18px;
+  margin: 3px 0;
+}
+.rating-star-text {
+  cursor: pointer;
+  color: black;
+  font-size: 12px;
+  margin: 0 3px;
+}
+
+.range-slider {
+  display: flex;
+  gap: 5px;
+}
+
+.range-slider input {
+  width: 48%;
+}
+
+.price-inputs {
+  margin-top: 5px;
+}
+
+.price-inputs button {
+  margin-left: 5px;
+  padding: 2px 8px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+}
+
+.price-inputs button:hover {
+  background: #f0f0f0;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* Bootstrap row fix overflow */
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* Prevent card/image overflow */
+.product-card,
+.filter-container {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.product-card img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* For price input or range slider */
+.range-slider,
+.price-inputs {
+  max-width: 100%;
+}
+
+/* ------------------------ */
+.price-range {
+  color: black;
+  font-size: 13px;
+  font-weight: 600;
+}
+.price-filter {
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.go-btn {
+  margin-top: 10px;
+  padding: 3px 12px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.go-btn:hover {
+  background: #f0f0f0;
+}
+
+.price-options {
+  font-size: 14px;
+}
+
+.price-range-option {
+  cursor: pointer;
+  margin: 4px 0;
+}
+
+.price-range-option:hover {
+  text-decoration: underline;
+}
+/* products.css */
+
+.row.g-0 {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.row.g-0 > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* Optional: remove any sidebar padding if needed */
+.sidebar-container {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Optional: ensure PaginationCards container has no extra space */
+.pagination-container {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+/* Full page layout */
+.product-page {
+  display: flex;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 0 0 291px; /* Fixed width for sidebar */
+  max-width: 291px;
+  background: white;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  margin: 0;
+}
+
+/* PaginationCards wrapper */
+.pagination-container {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* FilterSidebar inner styling */
+.filter-container {
+  padding: 16px; /* Adjust content inside sidebar */
+}
+/* --------------------- */
+.ratings-stars {
+  font-size: 18px !important;
+  color: orange;
+}
+.product-titles {
+  font-size: 14px;
+  color: #0c50a6;
+}
+.prime-sub {
+  color: #0679ff;
+  font-size: 13px;
+  margin-top: -12px;
+}
+
+.right-mark {
+  margin-top: -8px;
+  color: orange;
+  font-weight: 700;
+}
+
+.desc {
+  font-size: 14px;
+  font-weight: 600;
+}
+.mini-card {
+  margin-top: -12px !important;
+}
+.mini-btn {
+  background: #ffd814;
+  padding: 5px;
+  width: 70%;
+}
+
+.service {
+  font-size: 13px;
+  color: gray;
+  margin-top: -12px;
+}
+.items-list {
+  list-style: none !important;
+}
+.scroll-items {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.scroll-card {
+  width: 220px;
+  flex-shrink: 0;
+}
+@media screen and (max-width: 455px) {
+  .scroll-items {
+    justify-content: center;
+  }
+}

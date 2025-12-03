@@ -1,0 +1,48 @@
+.custom-carousel .carousel-control-prev,
+.custom-carousel .carousel-control-next {
+  top: 24%; /* Move arrows up (adjust % as needed) */
+
+  bottom: auto;
+  transform: translateY(-50%);
+}
+.custom-carousel .carousel-control-prev {
+  left: -65px; /* Move further left */
+  color: black;
+}
+
+.custom-carousel .carousel-control-next {
+  right: -40px; /* Move further right */
+}
+
+.custom-carousel .carousel-control-prev-icon,
+.custom-carousel .carousel-control-next-icon {
+  width: 40px;
+  height: 52px;
+  filter: brightness(0) saturate(100%) !important;
+}
+
+/* carousels.css */
+
+.custom-carousel img {
+  width: 100%;
+  max-height: 550px;
+  object-fit: cover;
+}
+
+.fix-card-layer {
+  position: relative;
+  margin-top: -20%;
+  z-index: 10;
+  padding: 0 25px;
+}
+/* 
+@media (min-width: 1500px) and (max-width: 1900px) {
+  .fix-card-layer {
+    margin-top: -15%;
+  }
+}
+@media (min-width: 1900px) {
+  .fix-card-layer {
+    margin-top: -11%;
+  }
+} */

@@ -1,0 +1,155 @@
+/* -----------Similar brand---------------------------------- */
+.item-mrpprice {
+  color: gray;
+  font-size: 11px;
+  margin-top: -16px;
+}
+.prime-sub {
+  margin-top: -10px;
+}
+.prime-check {
+  margin-top: -3px;
+}
+.save-coupon {
+  background: #7fda6a;
+  padding: 2px 5px;
+}
+
+.coupon {
+  font-size: 12px;
+  margin-top: -12px;
+}
+.ml {
+  margin-top: -18px;
+  font-size: 12px;
+}
+/* --------------------------------------------- */
+.reviews-container {
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.left-section {
+  width: 40%;
+}
+
+.right-section {
+  width: 60%;
+  margin-left: -15%;
+}
+
+.reviews-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.rating-display {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.star-icon svg {
+  color: #ff6201;
+  margin-right: 5px;
+}
+
+.global-rating {
+  font-size: 14px;
+  color: gray;
+}
+.no-review {
+  font-size: 13px;
+  font-weight: 700;
+}
+.rating-row {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.rating-label {
+  width: 50px;
+  font-size: 14px;
+}
+
+.rating-bar {
+  width: 30%;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.534);
+  margin: 4px 5px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.rating-fill {
+  height: 20px;
+  background: #ff6201;
+}
+
+.rating-percent {
+  width: 40px;
+  font-size: 14px;
+}
+
+.rating-calculation {
+  font-size: 14px;
+  color: #0f79af;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.rating-calculation span {
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+/* hr {
+  margin: 15px 0;
+  border: 0.5px solid #e0e0e0;
+  width: 50%;
+} */
+.review-heading {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.review-text {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.review-btn {
+  background: white;
+  border: 1px solid black;
+  padding: 2px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.3s;
+  width: 50%;
+}
+
+.review-btn:hover {
+  background: #f3f3f3;
+}
+
+.no-review-box {
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .reviews-container {
+    flex-direction: column;
+  }
+  .left-section,
+  .right-section {
+    width: 100%;
+  }
+}

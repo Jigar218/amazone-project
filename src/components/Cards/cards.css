@@ -1,0 +1,77 @@
+.cards {
+  width: 100%;
+  max-width: 334px;
+  height: 420px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.card-image {
+  width: 100%;
+  height: 110px;
+  object-fit: contain;
+}
+
+.item-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.signin-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000000;
+}
+.ads-title {
+  font-size: 18px;
+}
+
+.rating {
+  color: #ffbc00;
+}
+
+.off-item {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 2px 8px;
+}
+
+.limit-item {
+  font-size: 12px;
+  font-weight: 600;
+  color: #cc0c39;
+  margin-top: -10px;
+}
+.percentage-off {
+  margin-top: -12px;
+  font-size: 16px;
+}
+
+.mrp {
+  text-decoration: line-through;
+}
+.discounted-price {
+  font-size: 12px;
+  margin-top: -12px;
+}
+.check {
+  font-size: 12px;
+  font-weight: 800;
+  color: orange;
+}
+@media (min-width: 1240px) {
+  .cardShow {
+    display: block;
+  }
+}
